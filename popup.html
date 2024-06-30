@@ -7,7 +7,25 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div id="root"></div>
-    <script src="static/js/main.js"></script>
+    <div class="container">
+        <h1>Website Blocker</h1>
+        <p>Add or remove websites from your blocklist.</p>
+        
+        <div class="blocklist">
+            <h2>Blocklist</h2>
+            <ul id="blocklist">
+                <!-- Blocked websites will appear here -->
+            </ul>
+        </div>
+
+        <div class="controls">
+            <input type="text" id="website-input" placeholder="Enter website URL">
+            <button id="add-button">Add to Blocklist</button>
+        </div>
+
+        <button id="toggle-extension">Enable/Disable Extension</button>
+    </div>
+
+    <script src="popup.bundle.js"></script>
 </body>
 </html>
